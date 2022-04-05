@@ -1,0 +1,20 @@
+import pandas as pd
+from constante import COLOANELE_TABELULUI_CU_HAIDUCI, COLOANELE_TABELULUI_CU_SARCINI, DENUMIREA_FIȘIERULUI_TABELULUI_CU_HAIDUCI, DENUMIREA_FIȘIERULUI_TABELULUI_CU_SARCINI
+from constante import DENUMIREA_FIȘIERULUI_TABELULUI_CU_SARCINI_NEÎNCEPUTE, COLOANELE_TABELULUI_CU_SARCINI_NEÎNCEPUTE
+from constante import DENUMIREA_FIȘIERULUI_TABELULUI_CU_SARCINI_GĂTATE, COLOANELE_TABELULUI_CU_SARCINI_GĂTATE
+
+dfMembrii = pd.DataFrame(columns=COLOANELE_TABELULUI_CU_HAIDUCI)
+dfMembrii.index.name = 'Haiducul numărul'
+dfMembrii.to_csv(DENUMIREA_FIȘIERULUI_TABELULUI_CU_HAIDUCI)
+
+dfSarcini = pd.DataFrame(columns=COLOANELE_TABELULUI_CU_SARCINI)
+dfSarcini.index.name = 'Sarcina numărul'
+dfSarcini.to_csv(DENUMIREA_FIȘIERULUI_TABELULUI_CU_SARCINI)
+
+dfSarciniNeîncepute = pd.DataFrame(columns=COLOANELE_TABELULUI_CU_SARCINI_NEÎNCEPUTE)
+dfSarciniNeîncepute.index.name = 'Sarcina numărul'
+dfSarciniNeîncepute.to_csv(DENUMIREA_FIȘIERULUI_TABELULUI_CU_SARCINI_NEÎNCEPUTE)
+
+dfSarciniGătate = pd.DataFrame(columns=COLOANELE_TABELULUI_CU_SARCINI_GĂTATE)
+dfSarciniGătate.index.name = 'Sarcina numărul'
+dfSarciniGătate.to_csv(DENUMIREA_FIȘIERULUI_TABELULUI_CU_SARCINI_GĂTATE)

@@ -1,0 +1,14 @@
+Teste:
+	Când unul(sau mai mulți) utilizator/i a/u ajuns în ghildă
+	Când unul(sau mai mulți) utilizator/i a/u plecat din ghildă	
+	Când unul(sau mai mulți) utilizator/i a/u plecat din ghildă și aveau searcini neterminate
+	Când unul(sau mai mulți) utilizator/i a/u adăugat sarcini în ghildă
+	Când unul(sau mai mulți) utilizator/i a/u terminat sarcini din ghildă
+
+Comenzi:
+	dacă un haiduc a ieșit din ghildă atunci sarcinile lui se vor transfera tabelului cu sarcini negătate/neîncepute
+	
+
+Buguri:
+	Posibile: 
+	pozițieElementÎnColoanaDinTabel poate nu returnează mereu indexuri din tabelul dat. trb testat.
